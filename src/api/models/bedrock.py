@@ -197,6 +197,19 @@ class BedrockModel(BaseChatModel):
             "tool_call": True,
             "stream_tool_call": False,
         },
+        # claude 3.5 cross-region inference profile
+        "us.anthropic.claude-3-5-sonnet-20240620-v1:0": {
+            "system": True,
+            "multimodal": True,
+            "tool_call": True,
+            "stream_tool_call": True,
+        },
+        "us.anthropic.claude-3-5-sonnet-20241022-v2:0": {
+            "system": True,
+            "multimodal": True,
+            "tool_call": True,
+            "stream_tool_call": True,
+        },
     }
 
     def list_models(self) -> list[str]:
